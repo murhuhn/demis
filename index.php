@@ -22,7 +22,6 @@ $query = mysqli_query($connection, "SELECT * FROM $dbarticles ORDER BY id DESC L
     <body>
       <main>
         <div class="container">
-          <a href="form.html" class="button">Обратная связь</a>
           <div class="preview-news">
           <?php 
               while($article = mysqli_fetch_assoc($query)){
@@ -44,6 +43,7 @@ $query = mysqli_query($connection, "SELECT * FROM $dbarticles ORDER BY id DESC L
           ?>
           </div>
           <a href="all_news.php" class="button">Все новости</a>
+          <a href="form.html" class="button">Обратная связь</a>
         </div>
       </main>
     </body>
